@@ -158,7 +158,7 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -615,7 +615,7 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: inherit;
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 1;
   color: inherit;
@@ -907,7 +907,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 label {
@@ -996,14 +996,14 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: rgba(82, 168, 236, 0.8);
+  border-color: #62b3e0;
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
 
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #62b3e0;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #62b3e0;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #62b3e0;
 }
 
 input[type="radio"],
@@ -3064,17 +3064,17 @@ button.close {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #006dcc;
-  *background-color: #0044cc;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-color: #62a6e3;
+  *background-color: #628ce3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62b7e3), to(#628ce3));
+  background-image: -webkit-linear-gradient(top, #62b7e3, #628ce3);
+  background-image: -o-linear-gradient(top, #62b7e3, #628ce3);
+  background-image: linear-gradient(to bottom, #62b7e3, #628ce3);
+  background-image: -moz-linear-gradient(top, #62b7e3, #628ce3);
   background-repeat: repeat-x;
-  border-color: #0044cc #0044cc #002a80;
+  border-color: #628ce3 #628ce3 #265ed3;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff62b7e3', endColorstr='#ff628ce3', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
@@ -3084,13 +3084,13 @@ button.close {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #0044cc;
-  *background-color: #003bb3;
+  background-color: #628ce3;
+  *background-color: #4c7cdf;
 }
 
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #003399 \9;
+  background-color: #376cdb \9;
 }
 
 .btn-warning {
@@ -3463,7 +3463,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #0044cc;
+  background-color: #628ce3;
 }
 
 .btn-group.open .btn-warning.dropdown-toggle {
@@ -4151,7 +4151,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   padding: 4px 14px;
   margin-bottom: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -5597,6 +5597,36 @@ a.badge:hover {
   font-weight: 200;
   line-height: 30px;
   color: inherit;
+}
+
+.jumbotron.masthead {
+  background-color: #1D77B1;
+  background-image: none;
+}
+
+.btn {
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: -webkit- none;
+  background-image: none;
+  background-image: -ms- none;
+  background-image: -moz- none;
+  background-image: -o- none;
+  border: 1px solid double;
+  -webkit-box-shadow: inset 0px 0px 1px #bbbbbb;
+     -moz-box-shadow: inset 0px 0px 1px #bbbbbb;
+          box-shadow: inset 0px 0px 1px #bbbbbb;
+  -webkit-transition: all 0.2s ease-in-out !important;
+     -moz-transition: all 0.2s ease-in-out !important;
+       -o-transition: all 0.2s ease-in-out !important;
+          transition: all 0.2s ease-in-out !important;
+}
+
+.btn:hover {
+  background-color: #6dafe8;
+  -webkit-transition: all 0.2s ease-in-out !important;
+     -moz-transition: all 0.2s ease-in-out !important;
+       -o-transition: all 0.2s ease-in-out !important;
+          transition: all 0.2s ease-in-out !important;
 }
 
 .pull-right {
