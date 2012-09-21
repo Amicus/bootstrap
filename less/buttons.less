@@ -11,8 +11,10 @@
   display: inline-block;
   .ie7-inline-block();
   padding: 4px 14px;
+  text-transform: uppercase;
   margin-bottom: 0; // For input.btn
   font-size: @baseFontSize;
+  font-family: @amicusButtonFontFamily;
   line-height: @baseLineHeight;
   *line-height: @baseLineHeight;
   text-align: center;
@@ -70,6 +72,17 @@
 
 // Button Sizes
 // --------------------------------------------------
+
+// Amicus Large is slightly bigger than normal large.
+.btn-amicus-large {
+  padding: 9px 16px;
+  font-size: @baseFontSize + 2px;
+  line-height: normal;
+  .border-radius(5px);
+}
+.btn-amicus-large [class^="icon-"] {
+  margin-top: 2px;
+} 
 
 // Large
 .btn-large {
@@ -135,6 +148,13 @@
 .btn-primary {
   .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
 }
+
+.amicus-btn {
+  .buttonBackground(@amicusLtGrayBackground, @amicusGrayBackground, darken(@amicusSlateGray, 10%));
+  border-color: @amicusGrayBorder;
+  color: @amicusSlateGray;
+}
+
 // Warning appears are orange
 .btn-warning {
   .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight);
@@ -156,6 +176,10 @@
   .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
 }
 
+.btn-amicus-green {
+  .buttonBackground(@amicusGreenBackground,@amicusLtGreenBackground);
+  border-color: @amicusGreenBorder;
+}
 
 // Cross-browser Jank
 // --------------------------------------------------
@@ -209,3 +233,37 @@ input[type="submit"].btn {
   text-decoration: underline;
   background-color: transparent;
 }
+
+// Custom Special Buttons
+// ------------------------
+
+.amicus-btn-call {
+  font-weight: bold;
+  .btn-amicus-green;
+  .btn-amicus-large;
+}
+
+.btn-amicus-bar-left {
+  .amicus-btn;
+  border: 1px solid #FFFFFF;
+  border-color: @amicusBarLightBorder @amicusBarDarkBorder @amicusBarDarkBorder @amicusBarDarkBorder;
+  .border-radius(0px 0px 0px 5px);
+}
+
+.btn-amicus-bar-mid {
+  .amicus-btn;
+  border-top: 1px solid @amicusBarLightBorder;
+  border-left: 1px solid @amicusBarLightBorder;
+  border-bottom: 1px solid @amicusBarDarkBorder;
+  border-right: 1px solid @amicusBarDarkBorder;
+  .border-radius(0px 0px 0px 0px);
+} 
+
+.btn-amicus-bar-right {
+  .amicus-btn;
+  border-top: 1px solid @amicusBarLightBorder;
+  border-left: 1px solid @amicusBarLightBorder;
+  border-bottom: 1px solid @amicusBarDarkBorder;
+  border-right: 1px solid @amicusBarDarkBorder;
+  .border-radius(0px 0px 5px 0px);
+} 

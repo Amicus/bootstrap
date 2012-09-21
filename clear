@@ -1448,7 +1448,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
             <tbody>
               <tr>
                 <td><button type="button" class="btn amicus-btn">Default</button></td>
-                <td><code>btn amicus-btn</code></td>
+                <td><code>btn</code></td>
                 <td>Amicus standard button. Gray gradient with dark slate gray text.</td>
               </tr>
               <tr>
@@ -1489,51 +1489,13 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
             </tbody>
           </table>
 
-          <h2>Button rows</h2>
-          <p>Stylish button rows can be created with the  <code>.btn-amicus-bar-left</code>, <code>.btn-amicus-bar-mid</code>, and <code>.btn-amicus-bar-right</code> elements.</p>
-          <div class="bs-docs-example">
-            <button type="button" class="btn btn-amicus-bar-left">Link</button><button type="button" class="btn btn-amicus-bar-mid">Link</button><button type="button" class="btn btn-amicus-bar-right">Link</button>
-          </div>
-          <table class="table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Button</th>
-                <th>class=""</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><button type="button" class="btn btn-amicus-bar-left">Link</button></td>
-                <td><code>btn btn-amicus-bar-left</code></td>
-                <td>The left side of a cool looking row of buttons.</td>
-              </tr>
-              <tr>
-                <td><button type="button" class="btn btn-amicus-bar-mid">Link</button></td>
-                <td><code>btn btn-amicus-bar-mid</code></td>
-                <td>The middle of a cool looking row of buttons.</td>
-              </tr> 
-              <tr>
-                <td><button type="button" class="btn btn-amicus-bar-right">Link</button></td>
-                <td><code>btn btn-amicus-bar-right</code></td>
-                <td>The right side of a cool looking row of buttons.</td>
-              </tr> 
-            </tbody>
-          </table>
- 
-
           <h4>Cross browser compatibility</h4>
           <p>IE9 doesn't crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled <code>button</code> elements, rendering text gray with a nasty text-shadow that we cannot fix.</p>
 
 
           <h2>Button sizes</h2>
           <p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code> for additional sizes.</p>
-          <p>Now with slightly more padded size <code>.btn-amicus-large</code>!</p>
           <div class="bs-docs-example">
-             <p>
-              <button type="button" class="btn btn-amicus-large btn-primary">Amicus Large button</button>
-              <button type="button" class="btn btn-amicus-large">Amicus Large button</button>
-            </p>
             <p>
               <button type="button" class="btn btn-large btn-primary">Large button</button>
               <button type="button" class="btn btn-large">Large button</button>
