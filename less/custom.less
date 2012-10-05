@@ -3,31 +3,6 @@
 	background-image: none;
 }
 
-.btn {
-  text-transform: uppercase;
-	font-family: @sansFontFamily;
-	border: 1px solid double;
-	-moz-box-shadow: inset 0px 0px 1px rgba(187,187,187,1);
-	-webkit-box-shadow: inset 0px 0px 1px rgba(187,187,187,1);
-	box-shadow:inset 0px 0px 1px rgba(187,187,187,1);
-	background-image: -o- none;
-	background-image: -moz- none;
-	background-image: -webkit- none;
-	background-image: -ms- none;
-	background-image: none;
-	-webkit-transition: all .2s ease-in-out !important;
-	-moz-transition: all .2s ease-in-out !important;
-	-o-transition: all .2s ease-in-out !important;
-	transition: all .2s ease-in-out !important;
-
-  &:hover {
-	  -webkit-transition: all .2s ease-in-out !important;
-	  -moz-transition: all .2s ease-in-out !important;
-	  -o-transition: all .2s ease-in-out !important;
-	  transition: all .2s ease-in-out !important;
-  }
-}
-
 .people {
   border-left: 1px solid #efefef;
   border-right: 1px solid #efefef;
@@ -75,4 +50,85 @@
   }
 }
 
+body {
+  background-color: @newAmicusLtGray;
+}
 
+.main_bar {
+  height: 55px;
+  background-color: @newAmicusGreen;
+  margin-top: 15px;
+  a{
+    &:hover { text-decoration: none;}
+    h1{
+      text-align: center;
+      font-size: 19px;
+      color: white;
+    }
+  }
+  .selection_chevron {
+    top: 137px;
+    left: 1130px;
+    position: absolute;
+  }
+}
+
+.secondary_bar {
+  min-height: 6px;
+  background-color: @newAmicusDarkGray;
+  a {
+    &:hover { text-decoration: none;}
+    h2{
+      text-align: center;
+      font-size: 16px;
+      color: white;
+      line-height: 1;
+      text-transform: capitalize;
+    }
+  }
+  .active{
+    background-color: @newAmicusNavyBlue;
+    box-shadow: none;
+    display: block;
+    border-radius: 20px;
+
+    h2 {
+      margin: 5px 0px 10px 0px;
+      padding: 5px 0px 5px 0px;
+    }
+  }
+  .row { height: 43px; }
+}
+
+.m_head {
+  .btn {
+    text-transform: none;
+    background-image: none;
+    background-color: none;
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+    &:hover {
+      border-radius: 0px;
+    }
+    .caret { margin-left: 5px}
+
+    .level_box {
+      color: white;
+      display: inline;
+      font-weight: bold;
+      border-radius: 3px;
+      padding: 2px 6px 2px 6px;
+      background-color: @newAmicusGreen;
+    }
+  }
+}
+
+.content_image {
+  margin: 30px auto 0px auto;
+}
+
+.bigdiv {
+  width: 100%;
+  text-align: center;
+}
